@@ -1,7 +1,8 @@
-import "./App.css";
+import React from "react";
+import Home from "./Pages/Home";
 
 function App() {
-  return <div className="App"></div>;
+  return <Home />;
 }
 
 export default App;
