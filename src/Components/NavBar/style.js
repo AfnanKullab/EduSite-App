@@ -13,8 +13,8 @@ export const NavBarWrapper = styled.div`
   transition: 0.2s all;
 `;
 export const Container = styled.div`
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1.25em; //15px
+  padding-left: 1.25em; //15px
   margin-right: auto;
   margin-left: auto;
 `;
@@ -29,16 +29,16 @@ export const Logowrapper = styled.div`
   }
 `;
 export const Logo = styled.a`
-  margin-top: 10px;
+  margin-top: 0.83em; //10px
   display: inline-block;
 `;
 export const NavbarToggle = styled.button`
-  osition: fixed;
+  position: fixed;
   right: 0;
   padding: 0;
-  height: 40px;
+  height: 7.04vh; //40px
   width: 40px;
-  margin-top: 5px;
+  margin-top: 0.41em; //5px
   z-index: 99;
   @media (max-width: 768px) {
     display: none;
@@ -67,13 +67,13 @@ export const NavLink = styled.a`
   text-decoration: none;
   color: #fff;
   transition: 0.2s all;
-  line-height: 20px;
+  line-height:  3.52vh; //20px
   display: block;
-  padding: 10px 15px;
+  padding:0.83em 1.25em ; //10px 15px
   & :after {
     content: "";
     display: block;
-    height: 2px;
+    height:  0.35vh; //2px
     background-color: #FF6700;
     width: 100%;
     transform: translateY(5px);
