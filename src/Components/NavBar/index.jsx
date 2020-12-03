@@ -5,7 +5,7 @@ import logoIamage from "../../images/logo.png";
 const Items = ["Home", "About", "Courses", "Blog", "Contact"];
 export default function NavBar() {
   return (
-    <S.HeaderWrapper>
+    <S.NavBarWrapper>
       <S.Container>
         <S.Logowrapper>
           <S.Logo>
@@ -21,6 +21,6 @@ export default function NavBar() {
           ))}
         </S.NavList>
       </S.Container>
-    </S.HeaderWrapper>
+    </S.NavBarWrapper>
   );
 }
