@@ -4,6 +4,7 @@ import {
   faFlask,
   faUsers,
   faComments,
+  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import * as S from "./style";
 
@@ -26,5 +27,12 @@ export const Comments = () => {
     <S.FeatureIcon>
       <FontAwesomeIcon icon={faComments} />;
     </S.FeatureIcon>
+  );
+};
+export const CourseLinkIcon = () => {
+  return (
+    <S.CourseLinkIcon>
+      <FontAwesomeIcon icon={faLink} />;
+    </S.CourseLinkIcon>
   );
 };

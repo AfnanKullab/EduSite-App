@@ -1,0 +1,23 @@
+import styled from "styled-components";
+
+export const MainButton = styled.a`
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ff6700;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  &:hover {
+    padding-right: 35px;
+    /* padding-left: 30px; */
+    color: #ff6700;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: #ff6700;
+  }
+`;

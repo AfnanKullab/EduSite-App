@@ -12,12 +12,6 @@ export const NavBarWrapper = styled.div`
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
 `;
-export const Container = styled.div`
-  padding-right: 1.25em; //15px
-  padding-left: 1.25em; //15px
-  margin-right: auto;
-  margin-left: auto;
-`;
 export const Logowrapper = styled.div`
   padding: 0;
   @media (min-width: 768px) {
