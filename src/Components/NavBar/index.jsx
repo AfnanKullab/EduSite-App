@@ -11,7 +11,7 @@ export default function NavBar() {
           <S.Logo>
             <img src={logoIamage} alt="logo" style={{ maxHeight: 30 }} />
           </S.Logo>
-        </S.Logowrapper>
+        </S.Logowrapper>  
 
         <S.NavList>
           {Items.map((Item) => (

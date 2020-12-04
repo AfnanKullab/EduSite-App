@@ -7,8 +7,9 @@ import styled from "styled-components";
 
 const AboutWrapper = styled.div`
   display: flex;
-  padding-top: 6.6em; // 80px
-  padding-bottom: 6.6em; // 80px
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-top: 3em;
 `;
 // const AboutRow = styled.div`
 //   margin-right: -1.25em; //-15px
@@ -33,6 +34,8 @@ const RightSide = styled.div`
 `;
 const ImgDev = styled.div`
   /* margin-top: 3.33em; //40px */
+`;
+const Image = styled.img`
   width: 100%;
 `;
 
@@ -51,7 +54,7 @@ export default function About() {
 
       <RightSide>
         <ImgDev>
-          <img src={AboutImage} alt="about" />
+          <Image src={AboutImage} alt="Image" />
         </ImgDev>
       </RightSide>
     </AboutWrapper>
