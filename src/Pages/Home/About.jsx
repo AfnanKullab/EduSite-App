@@ -24,8 +24,7 @@ const LeftSide = styled.div`
   padding-left: 1.25em; //15px
 `;
 const SectionHeader = styled.div`
-  margin-bottom: 3.3em //40px
-;
+  margin-bottom: 40px;
 `;
 const RightSide = styled.div`
   width: 50%;
