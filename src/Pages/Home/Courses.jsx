@@ -1,6 +1,7 @@
 import React from "react";
 import CourseCard from "../../Components/CourseCard";
 import Button from "../../Components/Button";
+import Heading from "../../Components/Heading";
 // import Container from "../../Components/Container";
 
 import * as T from "../../Components/Typography";
@@ -15,10 +16,7 @@ const Wrapper = styled.div`
 //   margin-right: -15px;
 //   margin-left: -15px;
 // `;
-const Head = styled.div`
-  margin-bottom: 3.3.em; //40px or /16=>2.5
-  text-align: center;
-`;
+
 const CoursesWrapper = styled.div`
   /* display: flex;
   flex-direction: row;
@@ -33,12 +31,12 @@ export const ButtonDiv = styled.div`
 export default function Courses() {
   return (
     <Wrapper>
-      <Head>
+      <Heading>
         <T.H2>Explore Courses</T.H2>
         <T.P>
           Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.
         </T.P>
-      </Head>
+      </Heading>
       <CoursesWrapper>
         <CourseCard />
         <ButtonDiv>

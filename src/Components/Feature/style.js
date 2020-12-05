@@ -7,8 +7,9 @@ export const FeatureWrapper = styled.div`
 export const Feature = styled.div`
   display: flex;
   align-items: center;
-  padding-bottom: 1.25em;
+  padding-bottom: 1em;
 `;
 export const FeatureContent = styled.div`
-  padding-left: 1.25em; //100px
+  padding-left: 1.25em;
+  width: 70%;
 `;
