@@ -5,6 +5,7 @@ import {
   faUsers,
   faComments,
   faLink,
+  faPlay,
 } from "@fortawesome/free-solid-svg-icons";
 import * as S from "./style";
 
@@ -34,5 +35,12 @@ export const CourseLinkIcon = () => {
     <S.CourseLinkIcon>
       <FontAwesomeIcon icon={faLink} />;
     </S.CourseLinkIcon>
+  );
+};
+export const Play = () => {
+  return (
+    <S.Play>
+      <FontAwesomeIcon icon={faPlay} />
+    </S.Play>
   );
 };

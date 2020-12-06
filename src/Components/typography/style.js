@@ -8,9 +8,14 @@ export const H2 = styled.h2`
   font-weight: 600;
   color: #374050;
 `;
-
-export const H3 = styled.h3``;
-
+export const H3 = styled.h3`
+  font-size: 24px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #374050;
+  line-height: 1.1;
+`;
 export const H4 = styled.h4`
   margin-top: 1em; //12px
   margin-bottom: 1.25em; //15px
@@ -19,12 +24,14 @@ export const H4 = styled.h4`
   font-size: 1.125rem; //18px
 `;
 export const P = styled.p`
-  font-size: 1.3125rem; //21px
-  margin-bottom: 1.66em; //20px
+  font-size: 21px;
   font-weight: 300;
   line-height: 1.4;
-  /* margin: 0 0 0.83em; //0 0 10px */
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+  color: #798696;
 `;
-export const FeatureP = styled.p`
-  /* margin: 0 0.83em; //0 0 10px */
+export const Para = styled.p`
+  margin: 0 0 10px;
+  line-height: 1.42857143;
 `;

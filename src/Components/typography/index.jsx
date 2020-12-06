@@ -21,7 +21,7 @@ export const P = (props) => {
   const { children } = props;
   return <S.P>{children}</S.P>;
 };
-export const FeatureP = (props) => {
+export const Para = (props) => {
   const { children } = props;
-  return <S.FeatureP>{children}</S.FeatureP>;
+  return <S.Para>{children}</S.Para>;
 };

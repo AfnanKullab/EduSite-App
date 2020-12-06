@@ -25,7 +25,7 @@ export const CourseLinkIcon = styled.i`
   opacity: 0;
   z-index: 10;
   transition: 0.2s all;
-  & :after {
+  &::after {
     content: "";
     position: absolute;
     left: 0;
@@ -35,5 +35,31 @@ export const CourseLinkIcon = styled.i`
     background-color: #ff6700;
     opacity: 0;
     transition: 0.2s opacity;
+  }
+`;
+export const Play = styled.i`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 24.027px;
+  z-index: 10;
+  animation: 2s play-animation infinite;
+  transition: 0.2s color;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #ff6700;
+    opacity: 0.7;
   }
 `;

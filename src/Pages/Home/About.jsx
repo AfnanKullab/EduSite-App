@@ -28,11 +28,10 @@ const SectionHeader = styled.div`
 `;
 const RightSide = styled.div`
   width: 50%;
-  padding-right: 1.25em; //15px
-  padding-left: 1.25em; //15px
+  padding: 0 15px;
 `;
 const ImgDev = styled.div`
-  /* margin-top: 3.33em; //40px */
+  margin-top: 40px;
 `;
 const Image = styled.img`
   width: 100%;

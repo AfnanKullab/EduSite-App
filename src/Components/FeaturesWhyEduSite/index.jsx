@@ -9,10 +9,10 @@ export default function FeaturesWhyEduSite() {
         <I.Flask />
         <S.FeatureContent>
           <T.H4>Online Courses</T.H4>
-          <T.FeatureP>
+          <T.Para>
             Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his
             suas veniam nominati.
-          </T.FeatureP>
+          </T.Para>
         </S.FeatureContent>
       </S.Feature>
 
@@ -20,10 +20,10 @@ export default function FeaturesWhyEduSite() {
         <I.Users />
         <S.FeatureContent>
           <T.H4>Expert Teachers</T.H4>
-          <T.FeatureP>
+          <T.Para>
             Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his
             suas veniam nominati.
-          </T.FeatureP>
+          </T.Para>
         </S.FeatureContent>
       </S.Feature>
 
@@ -31,10 +31,10 @@ export default function FeaturesWhyEduSite() {
         <I.Comments />
         <S.FeatureContent>
           <T.H4>Community</T.H4>
-          <T.FeatureP>
+          <T.Para>
             Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his
             suas veniam nominati.
-          </T.FeatureP>
+          </T.Para>
         </S.FeatureContent>
       </S.Feature>
     </S.FeaturesWrapper>
