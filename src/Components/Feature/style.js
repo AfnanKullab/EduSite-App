@@ -11,5 +11,5 @@ export const Feature = styled.div`
 `;
 export const FeatureContent = styled.div`
   padding-left: 1.25em;
-  width: 70%;
+  width: 75%;
 `;
