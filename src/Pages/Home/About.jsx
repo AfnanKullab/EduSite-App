@@ -3,13 +3,13 @@ import Feature from "../../Components/Feature";
 import AboutImage from "../../images/about (1).png";
 
 import * as T from "../../Components/Typography";
-import styled from "styled-components";
 
+import styled from "styled-components";
 const AboutWrapper = styled.div`
   display: flex;
   margin-left: 5em;
   margin-right: 5em;
-  padding-top: 3em;
+  padding: 80px 0px;
 `;
 // const AboutRow = styled.div`
 //   margin-right: -1.25em; //-15px
