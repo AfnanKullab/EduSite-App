@@ -1,4 +1,5 @@
 import React from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFlask,
@@ -7,6 +8,14 @@ import {
   faLink,
   faPlay,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faTwitter,
+  faGooglePlusG,
+  faInstagram,
+  faYoutube,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import * as S from "./style";
 
 export const Flask = () => {
@@ -42,5 +51,48 @@ export const Play = () => {
     <S.Play>
       <FontAwesomeIcon icon={faPlay} />
     </S.Play>
+  );
+};
+// Socialmedia Icons
+export const Facebook = () => {
+  return (
+    <S.Facebook>
+      <FontAwesomeIcon icon={faFacebookF} />
+    </S.Facebook>
+  );
+};
+export const Twitter = () => {
+  return (
+    <S.Twitter>
+      <FontAwesomeIcon icon={faTwitter} />
+    </S.Twitter>
+  );
+};
+export const GooglePlus = () => {
+  return (
+    <S.GooglePlus>
+      <FontAwesomeIcon icon={faGooglePlusG} />
+    </S.GooglePlus>
+  );
+};
+export const Instagram = () => {
+  return (
+    <S.Instagram>
+      <FontAwesomeIcon icon={faInstagram} />
+    </S.Instagram>
+  );
+};
+export const Youtube = () => {
+  return (
+    <S.Youtube>
+      <FontAwesomeIcon icon={faYoutube} />
+    </S.Youtube>
+  );
+};
+export const LinkedinIn = () => {
+  return (
+    <S.LinkedIn>
+      <FontAwesomeIcon icon={faLinkedinIn} />
+    </S.LinkedIn>
   );
 };

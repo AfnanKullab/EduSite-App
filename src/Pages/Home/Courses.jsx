@@ -3,14 +3,13 @@ import CourseCard from "../../Components/CourseCard";
 import Button from "../../Components/Button";
 import Heading from "../../Components/Heading";
 // import Container from "../../Components/Container";
-
 import * as T from "../../Components/Typography";
-import styled from "styled-components";
 
+import styled from "styled-components";
 const Wrapper = styled.div`
   margin-left: 5em;
   margin-right: 5em;
-  padding-top: 3em;
+  padding: 80px 0px 0px;
 `;
 // const RowHead = styled.div`
 //   margin-right: -15px;

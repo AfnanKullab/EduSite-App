@@ -4,6 +4,8 @@ import About from "./About";
 import Courses from "./Courses";
 import CallToAction from "../../Components/CallToAction";
 import WhyEduSite from "../../Components/WhyEduSite";
+import ContactUs from "../../Components/ContactUs";
+import Footer from "../../Components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Courses />
       <CallToAction />
       <WhyEduSite />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

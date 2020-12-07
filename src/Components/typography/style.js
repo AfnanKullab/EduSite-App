@@ -2,11 +2,19 @@ import styled from "styled-components";
 
 export const H1 = styled.h1``;
 export const H2 = styled.h2`
-  font-size: 1.875rem; //30px
-  margin-top: 1em; // 12px
-  margin-bottom: 1em; //12px
+  font-size: 30px;
+  margin-top: 12px;
+  margin-bottom: 15px;
   font-weight: 600;
   color: #374050;
+`;
+export const HH2 = styled.h2`
+  font-size: 30px;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  z-index: 1;
+  color: #fff;
 `;
 export const H3 = styled.h3`
   font-size: 24px;
@@ -30,6 +38,15 @@ export const P = styled.p`
   margin: 0 0 20px;
   letter-spacing: 1px;
   color: #798696;
+`;
+export const PP = styled(P)`
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  z-index: 1;
 `;
 export const Para = styled.p`
   margin: 0 0 10px;
