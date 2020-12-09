@@ -8,7 +8,7 @@ export const MainButton = styled.a`
   border: 1px solid transparent;
   border-radius: 40px;
   color: #fff;
-  -webkit-transition: 0.2s all;
+  /* -webkit-transition: 0.2s all; */
   transition: 0.2s all;
   font-family: "Lato", sans-serif;
   text-decoration: none;

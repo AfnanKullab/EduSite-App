@@ -18,6 +18,10 @@ export const LeftSide = styled.div`
 export const ImgLink = styled.a`
   margin-top: 20px;
   display: inline-block;
+  &:hover {
+    color: #374050;
+    opacity: 0.9;
+  }
 `;
 export const Img = styled.img`
   max-height: 30px;
