@@ -1,5 +1,5 @@
 import React from "react";
-// import Header from "../../Components/Header";
+import Header from "../../Components/Header";
 import About from "./About";
 import Courses from "./Courses";
 import CallToAction from "../../Components/CallToAction";
@@ -10,7 +10,7 @@ import Footer from "../../Components/Footer";
 export default function Home() {
   return (
     <div className="home">
-      {/* <Header /> */}
+      <Header />
       <About />
       <Courses />
       <CallToAction />
