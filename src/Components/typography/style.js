@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-export const H1 = styled.h1``;
+export const H1 = styled.h1`
+  margin-top: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 38px;
+  z-index: 1;
+  color: #fff;
+`;
 export const H2 = styled.h2`
   font-size: 30px;
   margin-top: 12px;
@@ -25,11 +32,11 @@ export const H3 = styled.h3`
   line-height: 1.1;
 `;
 export const H4 = styled.h4`
-  margin-top: 1em; //12px
-  margin-bottom: 1.25em; //15px
+  margin-top: 12px;
+  margin-bottom: 15px;
   font-weight: 600;
   color: #374050;
-  font-size: 1.125rem; //18px
+  font-size: 18px;
 `;
 export const P = styled.p`
   font-size: 21px;

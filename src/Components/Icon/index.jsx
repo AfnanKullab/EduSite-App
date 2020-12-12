@@ -1,5 +1,5 @@
 import React from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
+// import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFlask,
@@ -7,6 +7,9 @@ import {
   faComments,
   faLink,
   faPlay,
+  faEnvelope,
+  faPhoneAlt,
+  faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -94,5 +97,26 @@ export const LinkedinIn = () => {
     <S.LinkedIn>
       <FontAwesomeIcon icon={faLinkedinIn} />
     </S.LinkedIn>
+  );
+};
+export const Envelope = () => {
+  return (
+    <S.ContactIcons>
+      <FontAwesomeIcon icon={faEnvelope} />
+    </S.ContactIcons>
+  );
+};
+export const Phone = () => {
+  return (
+    <S.ContactIcons>
+      <FontAwesomeIcon icon={faPhoneAlt} />
+    </S.ContactIcons>
+  );
+};
+export const MapMarker = () => {
+  return (
+    <S.ContactIcons>
+      <FontAwesomeIcon icon={faMapMarkerAlt} />
+    </S.ContactIcons>
   );
 };

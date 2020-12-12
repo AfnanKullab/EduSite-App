@@ -141,3 +141,14 @@ export const LinkedIn = styled.i`
   transition: 0.2s opacity;
   background-color: #007bb5;
 `;
+export const ContactIcons = styled.i`
+  color: #ff6700;
+  margin-right: 15px;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+`;

@@ -1,22 +1,46 @@
 import React from "react";
 import * as S from "./style";
-import logoIamage from "../../images/logo.png";
+import whitelogo from "../../images/logo.png";
+import blacklogo from "../../images/logo (1).png";
 
-const Items = ["Home", "About", "Courses", "Blog", "Contact"];
-export default function NavBar() {
+export default function NavBar({ bgcolor, color, white }) {
+  const Items = [
+    {
+      path: "/",
+      nav: "Home",
+    },
+    {
+      path: "/about",
+      nav: "About",
+    },
+    {
+      path: "/courses",
+      nav: "Courses",
+    },
+    {
+      path: "/blog",
+      nav: "Blog",
+    },
+    {
+      path: "/contact",
+      nav: "Contact",
+    },
+  ];
   return (
-    <S.NavBarWrapper>
+    <S.NavBarWrapper className="header" bgcolor={bgcolor}>
       <S.Container>
-        <S.Logowrapper>
-          <S.Logo>
-            <img src={logoIamage} alt="logo" style={{ maxHeight: 30 }} />
-          </S.Logo>
-        </S.Logowrapper>  
+        <S.Brand>
+          <S.LogoLink to="/">
+            <S.LogoImg src={white ? whitelogo : blacklogo} alt="logo" />
+          </S.LogoLink>
+        </S.Brand>
 
         <S.NavList>
           {Items.map((Item) => (
             <S.NavItem>
-              <S.NavLink>{Item}</S.NavLink>
+              <S.NavLink color={color} to={Item.path}>
+                {Item.nav}
+              </S.NavLink>
             </S.NavItem>
           ))}
         </S.NavList>
