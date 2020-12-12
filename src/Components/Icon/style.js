@@ -151,8 +151,4 @@ export const ContactIcons = styled.i`
   line-height: 40px;
   text-align: center;
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  &::before {
-    content: "\f0e0";
-  }
 `;

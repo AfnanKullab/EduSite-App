@@ -9,7 +9,7 @@ import {
   LinkedinIn,
 } from "../Icon";
 import * as S from "./style";
-import * as I from "../Icon";
+// import * as I from "../Icon";
 
 export default function Footer() {
   const Items = ["Home", "About", "Courses", "Blog", "Contact"];
@@ -21,7 +21,7 @@ export default function Footer() {
     <Youtube />,
     <LinkedinIn />,
   ];
-  //   const SocialItems = []
+
   return (
     <S.Wrapper>
       <S.TopFooter>
@@ -35,7 +35,7 @@ export default function Footer() {
           <S.FooterNav>
             {Items.map((Item) => (
               <S.Item>
-                <S.Link>{Item}</S.Link>
+                <S.FooterNavLink>{Item}</S.FooterNavLink>
               </S.Item>
             ))}
           </S.FooterNav>

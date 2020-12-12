@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 export const Wrapper = styled.div`
   position: relative;
   margin-left: 5em;
@@ -7,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 export const TopFooter = styled.div`
   display: flex;
+  height: 50px;
   /* justify-content: space-between; */
 `;
 export const LeftSide = styled.div`
@@ -47,7 +49,7 @@ export const Item = styled.li`
   font-weight: 700;
   line-height: 1.42857143;
 `;
-export const Link = styled.a`
+export const FooterNavLink = styled(Link)`
   display: block;
   text-transform: uppercase;
   transition: 0.2s color;
@@ -57,6 +59,7 @@ export const Link = styled.a`
   &:hover {
     color: #ff6700;
     border-bottom: 2px solid #ff6700;
+    margin: 0px;
   }
 `;
 // Bottom Footer

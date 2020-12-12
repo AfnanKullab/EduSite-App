@@ -2,23 +2,24 @@ import React from "react";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
 import TextArea from "../../Components/TextArea";
-
+import styled from "styled-components";
+const ButtonDev = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
 export default function Form() {
-  // handleSubmit(e) {
-  //     e.preventDefault();
-  //   }
-  //   handleChange(){
-
-  //   }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+  const handleChange = (e) => {};
   return (
-    <Form>
+    <form onSubmit={handleSubmit}>
       <Input
         type="text"
         name="name"
         id="name"
         placeholder="Name"
-        // value={value}
-        // onChange={handleChange}
+        // value={name}
         // error={errors}
       />
       <Input
@@ -26,21 +27,23 @@ export default function Form() {
         name="email"
         id="email"
         placeholder="Email"
-        // value={value}
-        // onChange={handleChange}
-        // error={errors}
+        // value={email}
+        onChange={handleChange}
+        // error={errors.email}
       />
       <Input
-        type="text"
-        name="subject"
-        id="subject"
-        placeholder="Subject"
-        // value={value}
-        // onChange={handleChange}
-        // error={errors}
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+        // value={password}
+        onChange={handleChange}
+        // error={errors.password}
       />
       <TextArea name="message" placeholder="Enter your Message"></TextArea>
-      <Button type="submit">Send Message</Button>
-    </Form>
+      <ButtonDev>
+        <Button type="submit">Send Message</Button>
+      </ButtonDev>
+    </form>
   );
 }

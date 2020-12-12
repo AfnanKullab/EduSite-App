@@ -7,8 +7,8 @@ export const FormWrapper = styled.div`
 export const Container = styled.div`
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 5em;
+  margin-left: 5em;
 `;
 export const Row = styled.div`
   margin-right: -15px;
@@ -35,4 +35,5 @@ export const ContactList = styled.ul`
 `;
 export const Items = styled.li`
   margin-bottom: 20px;
+  color: #798696;
 `;

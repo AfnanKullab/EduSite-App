@@ -1,8 +1,11 @@
 import React from "react";
+import { MapContainer, TileLayer } from "react-leaflet";
+// import "leaflet/dist/leaflet.css";
 import Form from "./Form";
 import * as S from "./style";
 import * as T from "../Typography";
 import * as I from "../Icon";
+import "../../App.css";
 export default function ContactForm() {
   return (
     <S.FormWrapper>
@@ -28,6 +31,18 @@ export default function ContactForm() {
                 4476 Clement Street
               </S.Items>
             </S.ContactList>
+            <MapContainer
+              center={[31.5086271, 34.4309158]}
+              zoom={5}
+              scrollWheelZoom={false}
+              className="map"
+              style={{ position: "unset" }}
+            >
+              <TileLayer
+                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+            </MapContainer>
           </S.RightForm>
         </S.Row>
       </S.Container>
