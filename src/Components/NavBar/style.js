@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import logoIamage from "../../images/logo.png";
+import logoIamage2 from "../../images/logo (1).png";
 
 export const NavBarWrapper = styled.div`
   position: absolute;
@@ -7,74 +10,78 @@ export const NavBarWrapper = styled.div`
   top: 0;
   z-index: 99;
   border-bottom: 1px solid rgba(235, 235, 235, 0.25);
-  /* background-color: #fff; */
-  background-color: transparent;
-  -webkit-transition: 0.2s all;
+  ${(props) =>
+    props.bgcolor
+      ? "background-color:transparent ;"
+      : "background-color:#fff;"};
   transition: 0.2s all;
 `;
-export const Logowrapper = styled.div`
-  padding: 0;
-  @media (min-width: 768px) {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  @media (min-width: 768px) {
-    float: left;
-  }
+export const Container = styled.div`
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px 89.5px;
+  display: flex;
+  justify-content: space-between;
 `;
-export const Logo = styled.a`
-  margin-top: 0.83em; //10px
+// logo
+// export const NavbarHeader = styled.div`
+//   margin-right: 0;
+//   margin-left: 0;
+// `;
+export const Brand = styled.div`
+  padding: 0px;
+  margin-right: 0;
+  margin-left: 0;
+`;
+export const LogoLink = styled(Link)`
+  margin-top: 10px;
   display: inline-block;
+  /* z-index: 1; */
 `;
-export const NavbarToggle = styled.button`
-  position: fixed;
-  right: 0;
-  padding: 0;
-  height: 7.04vh; //40px
-  width: 40px;
-  margin-top: 0.41em; //5px
-  z-index: 99;
-  @media (max-width: 768px) {
-    display: none;
-  }
+export const LogoImg = styled.img`
+  max-height: 30px;
+  /* ${(props) => (props.image ? `${logoIamage}` : `${logoIamage2}`)}; */
 `;
+
+//NavBar list
 export const NavList = styled.ul`
   list-style: none;
   display: flex;
-  color: #fff;
-  @media (min-width: 768px) {
-    float: right !important;
-    margin-right: -15px;
-  }
-  @media (min-width: 768px) {
-    margin: 0;
-  }
+  justify-content: space-around;
+  align-items: center;
+  margin-right: -15px;
+  font-size: 15px;
+  font-weight: 400;
 `;
 export const NavItem = styled.li`
   position: relative;
   box-sizing: border-box;
-  @media (min-width: 768px) {
-    float: left;
-  }
-`;
-export const NavLink = styled.a`
-  text-decoration: none;
-  color: #fff;
-  transition: 0.2s all;
-  line-height:  3.52vh; //20px
   display: block;
-  padding:0.83em 1.25em ; //10px 15px
-  & :after {
+  padding: 15px;
+`;
+export const NavLink = styled(Link)`
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  transition: 0.2s all;
+  line-height: 3.52vh; //20px
+  /* padding: 15px; */
+  font-weight: bold;
+  ${(props) => (props.color === "home" ? "color: #fff;" : "color:#374050;")};
+  &::after {
     content: "";
-    display: block;
-    height:  0.35vh; //2px
-    background-color: #FF6700;
+    /* display: block; */
+    height: 0.35vh; //2px
+    background-color: #ff6700;
     width: 100%;
     transform: translateY(5px);
     opacity: 0;
     transition: 0.2s all;
-  @media (min-width: 768px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  }
+  &:hover {
+    /* padding-left: 0px;
+    padding-right: 0px; */
+    padding-bottom: 0px;
+    border-bottom: 2px solid #ff6700;
   }
 `;
