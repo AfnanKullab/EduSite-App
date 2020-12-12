@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const ListItems = styled.ul`
-  margin: --15px;
+  margin: 0px;
   padding: 0;
+  z-index: 1;
 `;
 const Items = styled.li`
   display: inline-block;
@@ -21,7 +22,7 @@ const Items = styled.li`
     }
   }
 `;
-const Link = styled.a`
+const HomeLink = styled(Link)`
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
 `;
@@ -30,7 +31,7 @@ export default function List(props) {
   return (
     <ListItems>
       <Items>
-        <Link>Home</Link>
+        <HomeLink to="/">Home</HomeLink>
       </Items>
       <Items>{subTitle}</Items>
     </ListItems>
