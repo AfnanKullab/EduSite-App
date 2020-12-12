@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 body {
   font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -7,9 +8,13 @@ body {
 }
 *{
   margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
 }
  
-    
+/* ::placeholder{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+ 
+} */
   
