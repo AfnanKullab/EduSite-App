@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import * as B from "../../Components/Button";
 import * as S from "./style";
 import * as T from "../../Components/Typography";
 
@@ -17,7 +17,7 @@ export default function CallToAction() {
               Ceteros fuisset mei no, soleat epicurei adipiscing ne vis. Et his
               suas veniam nominati.
             </T.PP>
-            <Button>Get Started!</Button>
+            <B.Button>Get Started!</B.Button>
           </S.Details>
         </S.Row>
       </S.Contianer>

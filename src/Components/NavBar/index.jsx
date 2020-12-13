@@ -36,8 +36,8 @@ export default function NavBar({ bgcolor, color, white }) {
         </S.Brand>
 
         <S.NavList>
-          {Items.map((Item) => (
-            <S.NavItem>
+          {Items.map((Item, index) => (
+            <S.NavItem key={index}>
               <S.NavLink color={color} to={Item.path}>
                 {Item.nav}
               </S.NavLink>
