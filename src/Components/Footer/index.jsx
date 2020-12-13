@@ -33,8 +33,8 @@ export default function Footer() {
 
         <S.RightSide>
           <S.FooterNav>
-            {Items.map((Item) => (
-              <S.Item>
+            {Items.map((Item, index) => (
+              <S.Item key={index}>
                 <S.FooterNavLink>{Item}</S.FooterNavLink>
               </S.Item>
             ))}
@@ -53,8 +53,8 @@ export default function Footer() {
         </S.Right>
         <S.SocialIcons>
           <S.SocialNav>
-            {SocialIcons.map((Item) => (
-              <S.SocialItem>
+            {SocialIcons.map((Item, index) => (
+              <S.SocialItem key={index}>
                 <S.SocialLink>{Item}</S.SocialLink>
               </S.SocialItem>
             ))}
