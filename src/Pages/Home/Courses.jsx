@@ -1,6 +1,6 @@
 import React from "react";
 import CourseCard from "../../Components/CourseCard";
-import Button from "../../Components/Button";
+import * as B from "../../Components/Button";
 import Heading from "../../Components/Heading";
 // import Container from "../../Components/Container";
 import * as T from "../../Components/Typography";
@@ -39,7 +39,7 @@ export default function Courses() {
       <CoursesWrapper>
         <CourseCard />
         <ButtonDiv>
-          <Button>More Courses</Button>
+          <B.Button>More Courses</B.Button>
         </ButtonDiv>
       </CoursesWrapper>
     </Wrapper>

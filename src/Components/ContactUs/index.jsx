@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import * as B from "../../Components/Button";
 import * as S from "./style";
 import * as T from "../Typography";
 
@@ -13,7 +13,7 @@ export default function ContactUs() {
           <T.PP>
             Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.
           </T.PP>
-          <Button>Contact Us Now</Button>
+          <B.Button>Contact Us Now</B.Button>
         </S.Row>
       </S.Container>
     </S.Wrapper>
